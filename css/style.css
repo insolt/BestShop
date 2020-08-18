@@ -3,7 +3,13 @@
     --font2: 'Raleway', sans-serif;
     --color1: #08a6e4;
     --color2: #a5a5a5;
-    --color3: rgba(0, 0, 0, 0.16);
+    --color3: #fb3b64;
+    --color4: #55dfb4;
+    --color5: #07ace6;
+    --color6: #e8e9ed;
+    --color7: #13253b;
+    --shadow1: rgba(0, 0, 0, 0.16);
+    --shadow2: rgba(7, 172, 230, 0.16);
 }
 
 body {
@@ -14,7 +20,7 @@ body {
     width: 100vw;
     height: 70px;
     background-color: #fff;
-    box-shadow: 0 3px 6px var(--color3);
+    box-shadow: 0 3px 6px var(--shadow1);
 }
 
 .container {
@@ -126,26 +132,26 @@ body {
     align-items: center;
     border: none;
     border-radius: 40px;
-    background-color: #08a6e4;
+    background-color: var(--color1);
     text-decoration: none;
     color: white;
     font-family: var(--font1);
     font-size: 16px;
     font-weight: 700;
     transition: 0.1s;
-    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
+    box-shadow: 5px 10px 14px var(--shadow2);
 }
 
 .section-stats {
     height: 531px;
-    box-shadow: 0 -5px 80px var(--color3);
+    box-shadow: 0 -5px 80px var(--shadow1);
 }
 
 .section-stats__title {
     font-family: var(--font2);
     font-size: 36px;
     text-align: center;
-    columns: #000000;
+    color: #000;
     margin: 0;
     padding: 100px 0;
     font-weight: 400;
@@ -175,7 +181,7 @@ body {
 }
 
 .stats__icon-person {
-    background-color: #fb3b64;
+    background-color: var(--color3);
 }
 
 .stats__icon-person::after {
@@ -189,7 +195,7 @@ body {
 }
 
 .stats__icon-eye {
-    background-color: #08a6e4;
+    background-color: var(--color1);
 }
 
 .stats__icon-eye::after {
@@ -203,7 +209,7 @@ body {
 }
 
 .stats__icon-catalog {
-    background-color: #55dfb4;
+    background-color: var(--color4);
 }
 
 .stats__icon-catalog::after {
@@ -227,7 +233,7 @@ body {
 
 .section-stats__box-note {
     font-family: var(--font2);
-    color: #a5a5a5;
+    color: var(--color2);
     font-size: 16px;
     font-weight: 400;
     text-align: center;
@@ -246,7 +252,7 @@ body {
     width: 1124px;
     height: 370px;
     background: #fff;
-    border: 1px solid #e8e9ed;
+    border: 1px solid var(--color);
     margin: 0 auto;
     margin-bottom: 37px;
     border-radius: 5px;
@@ -267,7 +273,7 @@ body {
     position: absolute;
     width: 327px;
     height: 4px;
-    background: #fb3b64;
+    background: var(--color3);
     bottom: 0;
     z-index: 1
 }
@@ -291,7 +297,7 @@ body {
     content: "";
     width: 180px;
     height: 180px;
-    background: #fb3b64;
+    background: var(--color3);
     border-radius: 41px;
     transform: rotate(45deg);
     position: absolute;
@@ -320,7 +326,7 @@ body {
     position: absolute;
     width: 327px;
     height: 4px;
-    background: #08a6e4;
+    background: var(--color1);
     bottom: 0;
     z-index: 1
 }
@@ -338,7 +344,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    background: #07ace6;
+    background: var(--color5);
     border-radius: 50%;
 }
 
@@ -366,7 +372,7 @@ body {
     width: 623px;
     height: 370px;
     background: #fff;
-    border: 1px solid #e8e9ed;
+    border: 1px solid var(--color);
     margin: 0;
     border-radius: 5px;
 }
@@ -386,7 +392,7 @@ body {
     position: absolute;
     width: 327px;
     height: 4px;
-    background: #55dfb4;
+    background: var(--color4);
     bottom: 0;
     z-index: 1
 }
@@ -424,8 +430,8 @@ body {
     height: 370px;
     top: 0;
     left: 0;
-    background: #55dfb4;
-    border: 1px solid #e8e9ed;
+    background: var(--color4);
+    border: 1px solid var(--color);
     border-radius: 5px;
 }
 
@@ -464,7 +470,7 @@ body {
 .section-pricing__offer-basic {
     width: 372px;
     height: 461px;
-    border: 1px solid #fb3b64;
+    border: 1px solid var(--color3);
     border-radius: 18px;
     display: flex;
     flex-direction: column;
@@ -481,7 +487,7 @@ body {
     font-family: var(--font2);
     font-size: 24px;
     font-weight: 700;
-    color: #13253b;
+    color: var(--color7);
 }
 
 .section-pricing__offer-basic-price {
@@ -490,7 +496,7 @@ body {
     font-family: var(--font1);
     font-size: 46px;
     font-weight: 300;
-    color: #fb3b64;
+    color: var(--color3);
 }
 
 .section-pricing__offer-basic-list,
@@ -545,9 +551,9 @@ body {
 .section-pricing__offer-professional {
     width: 405px;
     height: 500px;
-    border: 1px solid #07ace6;
+    border: 1px solid var(--color5);
     border-radius: 18px;
-    box-shadow: 5px 10px 27px rgba(7, 177, 230, 0.16);
+    box-shadow: 5px 10px 27px var(--shadow2);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -562,7 +568,7 @@ body {
     font-family: var(--font2);
     font-size: 25px;
     font-weight: 700;
-    color: #13253b;
+    color: var(--color7);
 }
 
 .section-pricing__offer-professional-price {
@@ -572,14 +578,14 @@ body {
     font-family: var(--font1);
     font-size: 46px;
     font-weight: 300;
-    color: #07ace6;
+    color: var(--color5);
 }
 
 .section-pricing__offer-professional-note,
 .section-pricing__offer-premium-note {
     font-family: var(--font2);
     font-size: 12px;
-    color: #13253b;
+    color: var(--color7);
     font-weight: 700;
     text-align: center;
     margin-top: 5px;
@@ -594,8 +600,8 @@ body {
     position: absolute;
     bottom: -25px;
     border: none;
-    background: #07ace6;
-    box-shadow: 5px 10px 14px rgba(7, 177, 230, 0.16);
+    background: var(--color5);
+    box-shadow: 5px 10px 14px var(--shadow2);
     border-radius: 23px;
     font-family: var(--font1);
     font-weight: 700;
@@ -606,7 +612,7 @@ body {
 .section-pricing__offer-premium {
     width: 372px;
     height: 461px;
-    border: 1px solid #55dfb4;
+    border: 1px solid #748a83;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
@@ -622,7 +628,7 @@ body {
     font-family: var(--font1);
     font-size: 46px;
     font-weight: 300;
-    color: #55dfb4;
+    color: var(--color4);
 }
 
 .section-pricing__offer-premium-confirm {
@@ -634,7 +640,7 @@ body {
     position: absolute;
     bottom: -25px;
     border: none;
-    background: #55dfb4;
+    background: var(--color4);
     border-radius: 23px;
     font-family: var(--font1);
     font-weight: 700;
@@ -689,7 +695,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--font1);
-    color: #a5a5a5;
+    color: var(--color2);
     font-weight: 700;
     font-size: 16px;
 }
@@ -742,7 +748,7 @@ body {
 .form-user-details__name-label,
 .form-user-details__email-label {
     font-family: var(--font1);
-    color: #08a6e4;
+    color: var(--color1);
     font-weight: 700;
     font-size: 11px;
     margin: 0;
@@ -805,8 +811,8 @@ body {
     height: 57px;
     border: none;
     border-radius: 35px;
-    background: #08a6e4;
-    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
+    background: var(--color1);
+    box-shadow: 5px 10px 14px var(--shadow2);
     color: #fff;
     font-family: var(--font1);
     font-size: 13px;
@@ -817,7 +823,7 @@ body {
 
 .page-footer {
     background: #f7f7f7;
-    box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px -5px 40px var(--shadow1);
 }
 
 .page-footer .container {
@@ -837,7 +843,7 @@ body {
 }
 
 .page-footer__copyrights {
-    color: #a5a5a5;
+    color: var(--color2);
     font-family: var(--font1);
     font-size: 11px;
     font-weight: 400;
