@@ -17,7 +17,6 @@ body {
 }
 
 .page-header {
-    width: 100vw;
     height: 70px;
     background-color: #fff;
     box-shadow: 0 3px 6px var(--shadow1);
@@ -94,7 +93,6 @@ body {
 }
 
 .section-opening {
-    width: 100vw;
     height: 842px;
     background: url(../assets/background.png) no-repeat center bottom;
 }
