@@ -745,12 +745,12 @@ body {
     }
 }
 
-.form__contact-details {
+.form-contact-details {
     width: 350px;
     height: 376px;
 }
 
-.form__contact-detail--title {
+.form-contact-detail__title {
     font-family: var(--font2);
     color: #000;
     font-weight: 400;
@@ -758,7 +758,7 @@ body {
     margin: 0;
 }
 
-.form__contact-detail--text {
+.form-contact-detail__text {
     font-family: var(--font1);
     color: #000;
     font-weight: 400;
@@ -767,7 +767,7 @@ body {
     margin-bottom: 42px;
 }
 
-.form__contact-detail--list {
+.form-contact-detail__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -796,7 +796,7 @@ body {
     }
 }
 
-.form__contact-detail--item {
+.form-contact-detail__item {
     position: relative;
     line-height: 22px;
     margin: 0;
@@ -807,17 +807,17 @@ body {
     font-size: 16px;
 }
 
-.form__user-details {
+.form-user-details {
     width: 440px;
     height: 376px;
 }
 
-.form__user-details--form {
+.form-user-details__form {
     display: flex;
     flex-direction: column;
 }
 
-.form__user-details--form-inputs {
+.form-user-details__form-inputs {
     width: 440px;
     height: 157px;
     display: flex;
@@ -828,17 +828,17 @@ body {
     margin-bottom: 30px;
 }
 
-.form__user-details--name {
+.form-user-details__name {
     display: flex;
     flex-direction: column;
 }
 
-.form__user-details--email {
+.form-user-details__email {
     display: flex;
     flex-direction: column;
 }
 
-.form__user-details--name-label {
+.form-user-details__name-label {
     font-family: var(--font1);
     color: var(--color1);
     font-weight: 700;
@@ -849,7 +849,7 @@ body {
     letter-spacing: 3.28px;
 }
 
-.form__user-details--email-label {
+.form-user-details__email-label {
     font-family: var(--font1);
     color: var(--color1);
     font-weight: 700;
@@ -860,26 +860,26 @@ body {
     letter-spacing: 3.28px;
 }
 
-.form__user-details--name-input {
+.form-user-details__name-input {
     width: 440px;
     height: 43px;
     border: none;
     border-bottom: 1px solid #000;
 }
 
-.form__user-details--email-input {
+.form-user-details__email-input {
     width: 440px;
     height: 43px;
     border: none;
     border-bottom: 1px solid #000;
 }
 
-.form__user-details--checkbox {
+.form-user-details__checkbox {
     display: flex;
     margin-bottom: 20px;
 }
 
-.form__user-details--checkbox-input {
+.form-user-details__checkbox-input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -899,7 +899,7 @@ body {
     }
 }
 
-.form__user-details--checkbox-label {
+.form-user-details__checkbox-label {
     font-family: var(--font1);
     color: #707070;
     font-weight: 400;
@@ -910,11 +910,11 @@ body {
     cursor: pointer;
 }
 
-.form__user-details--btn {
+.form-user-details__btn {
     align-self: flex-end;
 }
 
-.form__user-details--btn-submit {
+.form-user-details__btn-submit {
     width: 226px;
     height: 57px;
     border: none;
