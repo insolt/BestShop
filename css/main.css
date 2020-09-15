@@ -1035,8 +1035,7 @@ body {
     margin: 100px auto 179px;
   }
 }
-
-.section-pricing__offer--title {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--title {
   font-family: var(--font2);
   font-size: 42px;
   font-weight: 400;
@@ -1044,27 +1043,25 @@ body {
   margin-top: 0;
   margin-bottom: 25px;
 }
-
-.section-pricing__offer--content {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media only screen and (max-width: 790px) {
-  .section-pricing__offer--content {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content {
     width: 100%;
     height: auto;
     flex-direction: column;
   }
 }
 @media only screen and (min-width: 790px) {
-  .section-pricing__offer--content {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content {
     width: 1266px;
     height: 550px;
   }
 }
-
-.section-pricing__offer-basic {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic {
   width: 372px;
   border: 1px solid var(--color3);
   border-radius: 18px;
@@ -1074,29 +1071,32 @@ body {
   position: relative;
 }
 @media only screen and (max-width: 790px) {
-  .section-pricing__offer-basic {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic {
     height: auto;
     margin-bottom: 50px;
   }
 }
 @media only screen and (min-width: 790px) {
-  .section-pricing__offer-basic {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic {
     height: 461px;
     flex-direction: column;
   }
 }
-
-.section-pricing__offer-basic--title {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic .section-pricing__offer-basic--top .section-pricing__offer-basic--title {
   text-align: center;
-  margin-top: 34px;
+  margin-top: 0;
   margin-bottom: 0;
   font-family: var(--font2);
   font-size: 24px;
   font-weight: 700;
   color: var(--color7);
 }
-
-.section-pricing__offer-basic--price {
+@media only screen and (min-width: 790px) {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic .section-pricing__offer-basic--top .section-pricing__offer-basic--title {
+    margin-top: 34px;
+  }
+}
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic .section-pricing__offer-basic--top .section-pricing__offer-basic--price {
   text-align: center;
   margin-top: 14px;
   font-family: var(--font1);
@@ -1104,8 +1104,7 @@ body {
   font-weight: 300;
   color: var(--color3);
 }
-
-.section-pricing__offer-basic--list {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic .section-pricing__offer-basic--list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1113,18 +1112,17 @@ body {
   margin-bottom: 40px;
 }
 @media only screen and (min-width: 790px) {
-  .section-pricing__offer-basic--list {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic .section-pricing__offer-basic--list {
     margin-bottom: 80px;
   }
 }
-.section-pricing__offer-basic--list li:nth-child(4) {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic .section-pricing__offer-basic--list li:nth-child(4) {
   list-style-image: url(../assets/close.svg);
 }
-.section-pricing__offer-basic--list li:nth-child(5) {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic .section-pricing__offer-basic--list li:nth-child(5) {
   list-style-image: url(../assets/close.svg);
 }
-
-.section-pricing__offer-basic--item {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic .section-pricing__offer-basic--list .section-pricing__offer-basic--item {
   text-align: center;
   font-family: var(--font1);
   color: #000;
@@ -1133,8 +1131,7 @@ body {
   list-style-image: url(../assets/ckechmark-1.svg);
   line-height: 39px;
 }
-
-.section-pricing__offer-basic--confirm {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-basic .section-pricing__offer-basic--confirm {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1150,8 +1147,7 @@ body {
   color: #fff;
   text-decoration: none;
 }
-
-.section-pricing__offer-professional {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional {
   width: 405px;
   border: 1px solid var(--color5);
   border-radius: 18px;
@@ -1162,29 +1158,32 @@ body {
   position: relative;
 }
 @media only screen and (max-width: 790px) {
-  .section-pricing__offer-professional {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional {
     height: auto;
     margin-bottom: 50px;
   }
 }
 @media only screen and (min-width: 790px) {
-  .section-pricing__offer-professional {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional {
     height: 500px;
     flex-direction: column;
   }
 }
-
-.section-pricing__offer-professional--title {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional .section-pricing__offer-profesional--top .section-pricing__offer-professional--title {
   text-align: center;
-  margin-top: 34px;
+  margin-top: 0;
   margin-bottom: 0;
   font-family: var(--font2);
   font-size: 25px;
   font-weight: 700;
   color: var(--color7);
 }
-
-.section-pricing__offer-professional--price {
+@media only screen and (min-width: 790px) {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional .section-pricing__offer-profesional--top .section-pricing__offer-professional--title {
+    margin-top: 34px;
+  }
+}
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional .section-pricing__offer-profesional--top .section-pricing__offer-professional--price {
   text-align: center;
   margin-top: 14px;
   margin-bottom: 0;
@@ -1193,8 +1192,7 @@ body {
   font-weight: 300;
   color: var(--color5);
 }
-
-.section-pricing__offer-professional--note {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional .section-pricing__offer-profesional--top .section-pricing__offer-professional--note {
   font-family: var(--font2);
   font-size: 12px;
   color: var(--color7);
@@ -1202,8 +1200,7 @@ body {
   text-align: center;
   margin-top: 5px;
 }
-
-.section-pricing__offer-professional--list {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional .section-pricing__offer-professional--list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1211,15 +1208,14 @@ body {
   margin-bottom: 40px;
 }
 @media only screen and (min-width: 790px) {
-  .section-pricing__offer-professional--list {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional .section-pricing__offer-professional--list {
     margin-bottom: 80px;
   }
 }
-.section-pricing__offer-professional--list li:nth-child(5) {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional .section-pricing__offer-professional--list li:nth-child(5) {
   list-style-image: url(../assets/close.svg);
 }
-
-.section-pricing__offer-professional--item {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional .section-pricing__offer-professional--list .section-pricing__offer-professional--item {
   text-align: center;
   font-family: var(--font1);
   color: #000;
@@ -1229,8 +1225,7 @@ body {
   line-height: 39px;
   line-height: 45px;
 }
-
-.section-pricing__offer-professional--confirm {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-professional .section-pricing__offer-professional--confirm {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1247,8 +1242,7 @@ body {
   color: #fff;
   text-decoration: none;
 }
-
-.section-pricing__offer-premium {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-premium {
   width: 372px;
   height: 461px;
   border: 1px solid #748a83;
@@ -1259,29 +1253,32 @@ body {
   position: relative;
 }
 @media only screen and (max-width: 790px) {
-  .section-pricing__offer-premium {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-premium {
     height: auto;
     margin-bottom: 60px;
   }
 }
 @media only screen and (min-width: 790px) {
-  .section-pricing__offer-premium {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-premium {
     height: 461px;
     flex-direction: column;
   }
 }
-
-.section-pricing__offer-premium--title {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-premium .section-pricing__offer-premium--top .section-pricing__offer-premium--title {
   text-align: center;
-  margin-top: 34px;
+  margin-top: 0;
   margin-bottom: 0;
   font-family: var(--font2);
   font-size: 24px;
   font-weight: 700;
   color: var(--color7);
 }
-
-.section-pricing__offer-premium--price {
+@media only screen and (min-width: 790px) {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-premium .section-pricing__offer-premium--top .section-pricing__offer-premium--title {
+    margin-top: 34px;
+  }
+}
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-premium .section-pricing__offer-premium--top .section-pricing__offer-premium--price {
   text-align: center;
   margin-top: 14px;
   margin-bottom: 0;
@@ -1290,8 +1287,7 @@ body {
   font-weight: 300;
   color: var(--color4);
 }
-
-.section-pricing__offer-premium--note {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-premium .section-pricing__offer-premium--top .section-pricing__offer-premium--note {
   font-family: var(--font2);
   font-size: 12px;
   color: var(--color7);
@@ -1299,8 +1295,7 @@ body {
   text-align: center;
   margin-top: 5px;
 }
-
-.section-pricing__offer-premium--list {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-premium .section-pricing__offer-premium--list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1308,12 +1303,11 @@ body {
   margin-bottom: 40px;
 }
 @media only screen and (min-width: 790px) {
-  .section-pricing__offer-premium--list {
+  .section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-premium .section-pricing__offer-premium--list {
     margin-bottom: 80px;
   }
 }
-
-.section-pricing__offer-premium--item {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-premium .section-pricing__offer-premium--list .section-pricing__offer-premium--item {
   text-align: center;
   font-family: var(--font1);
   color: #000;
@@ -1322,8 +1316,7 @@ body {
   list-style-image: url(../assets/ckechmark-1.svg);
   line-height: 39px;
 }
-
-.section-pricing__offer-premium--confirm {
+.section-pricing .container .section-pricing__offer .section-pricing__offer--content .section-pricing__offer-premium .section-pricing__offer-premium--confirm {
   display: flex;
   justify-content: center;
   align-items: center;

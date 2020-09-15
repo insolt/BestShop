@@ -51,15 +51,12 @@
                     .section-pricing__offer-basic--top {
                         .section-pricing__offer-basic--title {
                             text-align: center;
-                            margin-top: 0;
+                            margin-top: 34px;
                             margin-bottom: 0;
                             font-family: var(--font2);
                             font-size: 24px;
                             font-weight: 700;
                             color: var(--color7);
-                            @include desktop {
-                                margin-top: 34px;
-                            }
                         }
                         .section-pricing__offer-basic--price {
                             text-align: center;
@@ -134,15 +131,12 @@
                     .section-pricing__offer-profesional--top {
                         .section-pricing__offer-professional--title {
                             text-align: center;
-                            margin-top: 0;
+                            margin-top: 34px;
                             margin-bottom: 0;
                             font-family: var(--font2);
                             font-size: 25px;
                             font-weight: 700;
                             color: var(--color7);
-                            @include desktop {
-                                margin-top: 34px;
-                            }
                         }
                         .section-pricing__offer-professional--price {
                             text-align: center;
@@ -162,48 +156,6 @@
                             margin-top: 5px;
                         }
                     }
-                    .section-pricing__offer-professional--list {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        list-style: none;
-                        margin-bottom: 40px;
-                        @include desktop {
-                            margin-bottom: 80px;
-                        }
-                        li {
-                            &:nth-child(5) {
-                                list-style-image: url(../assets/close.svg);
-                            }
-                        }
-                        .section-pricing__offer-professional--item {
-                            text-align: center;
-                            font-family: var(--font1);
-                            color: #000;
-                            font-size: 14px;
-                            font-weight: 400;
-                            list-style-image: url(../assets/ckechmark-1.svg);
-                            line-height: 39px;
-                            line-height: 45px;
-                        }
-                    }
-                    .section-pricing__offer-professional--confirm {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 165px;
-                        height: 50px;
-                        position: absolute;
-                        bottom: -25px;
-                        border: none;
-                        background: var(--color5);
-                        box-shadow: 5px 10px 14px var(--shadow2);
-                        border-radius: 23px;
-                        font-family: var(--font1);
-                        font-weight: 700;
-                        color: #fff;
-                        text-decoration: none;
-                    }
                 }
                 .section-pricing__offer-premium {
                     width: 372px;
@@ -222,74 +174,120 @@
                         height: 461px;
                         flex-direction: column;
                     }
-                    .section-pricing__offer-premium--top {
-                        .section-pricing__offer-premium--title {
-                            text-align: center;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            font-family: var(--font2);
-                            font-size: 24px;
-                            font-weight: 700;
-                            color: var(--color7);
-                            @include desktop {
-                                margin-top: 34px;
-                            }
-                        }
-                        .section-pricing__offer-premium--price {
-                            text-align: center;
-                            margin-top: 14px;
-                            margin-bottom: 0;
-                            font-family: var(--font1);
-                            font-size: 46px;
-                            font-weight: 300;
-                            color: var(--color4);
-                        }
-                        .section-pricing__offer-premium--note {
-                            font-family: var(--font2);
-                            font-size: 12px;
-                            color: var(--color7);
-                            font-weight: 700;
-                            text-align: center;
-                            margin-top: 5px;
-                        }
-                    }
-                    .section-pricing__offer-premium--list {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        list-style: none;
-                        margin-bottom: 40px;
-                        @include desktop {
-                            margin-bottom: 80px;
-                        }
-                        .section-pricing__offer-premium--item {
-                            text-align: center;
-                            font-family: var(--font1);
-                            color: #000;
-                            font-size: 14px;
-                            font-weight: 400;
-                            list-style-image: url(../assets/ckechmark-1.svg);
-                            line-height: 39px;
-                        }
-                    }
-                    .section-pricing__offer-premium--confirm {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 150px;
-                        height: 50px;
-                        position: absolute;
-                        bottom: -25px;
-                        border: none;
-                        background: var(--color4);
-                        border-radius: 23px;
-                        font-family: var(--font1);
-                        font-weight: 700;
-                        color: #fff;
-                        text-decoration: none;
-                    }
                 }
             }
         }
     }
+}
+
+.section-pricing__offer-professional--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 40px;
+    @include desktop {
+        margin-bottom: 80px;
+    }
+    li {
+        &:nth-child(5) {
+            list-style-image: url(../assets/close.svg);
+        }
+    }
+}
+
+.section-pricing__offer-professional--item {
+    text-align: center;
+    font-family: var(--font1);
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    list-style-image: url(../assets/ckechmark-1.svg);
+    line-height: 39px;
+    line-height: 45px;
+}
+
+.section-pricing__offer-professional--confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 50px;
+    position: absolute;
+    bottom: -25px;
+    border: none;
+    background: var(--color5);
+    box-shadow: 5px 10px 14px var(--shadow2);
+    border-radius: 23px;
+    font-family: var(--font1);
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.section-pricing__offer-premium--title {
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 0;
+    font-family: var(--font2);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color7);
+}
+
+.section-pricing__offer-premium--price {
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-family: var(--font1);
+    font-size: 46px;
+    font-weight: 300;
+    color: var(--color4);
+}
+
+.section-pricing__offer-premium--note {
+    font-family: var(--font2);
+    font-size: 12px;
+    color: var(--color7);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.section-pricing__offer-premium--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 40px;
+    @include desktop {
+        margin-bottom: 80px;
+    }
+}
+
+.section-pricing__offer-premium--item {
+    text-align: center;
+    font-family: var(--font1);
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    list-style-image: url(../assets/ckechmark-1.svg);
+    line-height: 39px;
+}
+
+.section-pricing__offer-premium--confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: -25px;
+    border: none;
+    background: var(--color4);
+    border-radius: 23px;
+    font-family: var(--font1);
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
 }

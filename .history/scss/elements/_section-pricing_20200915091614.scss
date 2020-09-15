@@ -51,15 +51,12 @@
                     .section-pricing__offer-basic--top {
                         .section-pricing__offer-basic--title {
                             text-align: center;
-                            margin-top: 0;
+                            margin-top: 34px;
                             margin-bottom: 0;
                             font-family: var(--font2);
                             font-size: 24px;
                             font-weight: 700;
                             color: var(--color7);
-                            @include desktop {
-                                margin-top: 34px;
-                            }
                         }
                         .section-pricing__offer-basic--price {
                             text-align: center;
@@ -134,15 +131,12 @@
                     .section-pricing__offer-profesional--top {
                         .section-pricing__offer-professional--title {
                             text-align: center;
-                            margin-top: 0;
+                            margin-top: 34px;
                             margin-bottom: 0;
                             font-family: var(--font2);
                             font-size: 25px;
                             font-weight: 700;
                             color: var(--color7);
-                            @include desktop {
-                                margin-top: 34px;
-                            }
                         }
                         .section-pricing__offer-professional--price {
                             text-align: center;
@@ -225,15 +219,12 @@
                     .section-pricing__offer-premium--top {
                         .section-pricing__offer-premium--title {
                             text-align: center;
-                            margin-top: 0;
+                            margin-top: 24px;
                             margin-bottom: 0;
                             font-family: var(--font2);
                             font-size: 24px;
                             font-weight: 700;
                             color: var(--color7);
-                            @include desktop {
-                                margin-top: 34px;
-                            }
                         }
                         .section-pricing__offer-premium--price {
                             text-align: center;
