@@ -187,6 +187,7 @@
                     }
                 }
                 .form__user-details--btn {
+                    align-self: center;
                     @include desktop {
                         align-self: flex-end;
                     }

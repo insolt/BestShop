@@ -1,0 +1,107 @@
+.section-stats {
+    height: auto;
+    box-shadow: 0 -5px 80px var(--shadow1);
+    @include desktop {
+        height: 531px;
+    }
+}
+
+.section-stats__title {
+    font-family: var(--font2);
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    padding: 100px 0 20px 0;
+    font-weight: 400;
+    @include desktop {
+        padding: 100px 0;
+    }
+}
+
+.section-stats__selection {
+    margin: 0 auto;
+    display: flex;
+    @include mobile {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    @include desktop {
+        justify-content: space-around;
+        align-items: stretch;
+    }
+}
+
+.section-stats__box {
+    width: 150px;
+    margin: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+    align-items: center;
+}
+
+.section-stats__box--icon {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.stats__icon--person {
+    background-color: var(--color3);
+    &::after {
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 65px;
+        left: 30px;
+        top: 2px;
+        background: url(../assets/person.svg) no-repeat;
+    }
+}
+
+.stats__icon--eye {
+    background-color: var(--color1);
+    &::after {
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 65px;
+        left: 30px;
+        top: 15px;
+        background: url(../assets/eye.svg) no-repeat;
+    }
+}
+
+.stats__icon--catalog {
+    background-color: var(--color4);
+    &::after {
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 65px;
+        left: 30px;
+        top: 5px;
+        background: url(../assets/catalog.svg) no-repeat;
+    }
+}
+
+.section-stats__box--value {
+    font-family: var(--font2);
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 5.96px;
+}
+
+.section-stats__box--note {
+    font-family: var(--font2);
+    color: var(--color2);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}

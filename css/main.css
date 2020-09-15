@@ -1333,6 +1333,10 @@ body {
   text-decoration: none;
 }
 
+.form {
+  width: 100%;
+  height: auto;
+}
 @media only screen and (min-width: 790px) {
   .form {
     width: 896px;
@@ -1409,11 +1413,13 @@ body {
 .form .container .form__user-details {
   margin-top: 40px;
   margin-bottom: 40px;
-  width: 440px;
-  height: 376px;
+  width: 100%;
+  height: auto;
 }
 @media only screen and (min-width: 790px) {
   .form .container .form__user-details {
+    width: 440px;
+    height: 376px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -1423,7 +1429,8 @@ body {
   flex-direction: column;
 }
 .form .container .form__user-details .form__user-details--form .form__user-details--form-inputs {
-  width: 440px;
+  width: 80%;
+  margin: 0 auto;
   height: 157px;
   display: flex;
   flex-direction: column;
@@ -1431,6 +1438,12 @@ body {
   padding: 0;
   margin-top: 4px;
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 790px) {
+  .form .container .form__user-details .form__user-details--form .form__user-details--form-inputs {
+    width: 440px;
+    height: 157px;
+  }
 }
 .form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--name {
   display: flex;
@@ -1473,8 +1486,15 @@ body {
   border-bottom: 1px solid #000;
 }
 .form .container .form__user-details .form__user-details--form .form__user-details--checkbox {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 790px) {
+  .form .container .form__user-details .form__user-details--form .form__user-details--checkbox {
+    width: 100%;
+  }
 }
 .form .container .form__user-details .form__user-details--form .form__user-details--checkbox .form__user-details--checkbox-input {
   -webkit-appearance: none;
@@ -1534,23 +1554,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
-.page-footer__logo {
+.page-footer .container .page-footer__despcription .page-footer__logo {
   margin: 0px;
   color: var(--color1);
   font-family: var(--font1);
   font-size: 26px;
   font-weight: 300;
 }
-
-.page-footer__copyrights {
+.page-footer .container .page-footer__despcription .page-footer__copyrights {
   color: var(--color2);
   font-family: var(--font1);
   font-size: 11px;
   font-weight: 400;
 }
-
-.page-footer__links {
+.page-footer .container .page-footer__links {
   width: 68px;
   height: 24px;
   display: flex;

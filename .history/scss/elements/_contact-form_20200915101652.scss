@@ -187,9 +187,7 @@
                     }
                 }
                 .form__user-details--btn {
-                    @include desktop {
-                        align-self: flex-end;
-                    }
+                    align-self: flex-end;
                     .form__user-details--btn-submit {
                         width: 226px;
                         height: 57px;

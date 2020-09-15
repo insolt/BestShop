@@ -76,9 +76,10 @@
             }
         }
         .form__user-details {
-            width: 80%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 100%;
             height: auto;
-            margin: 40px auto;
             @include desktop {
                 width: 440px;
                 height: 376px;
@@ -187,9 +188,7 @@
                     }
                 }
                 .form__user-details--btn {
-                    @include desktop {
-                        align-self: flex-end;
-                    }
+                    align-self: flex-end;
                     .form__user-details--btn-submit {
                         width: 226px;
                         height: 57px;

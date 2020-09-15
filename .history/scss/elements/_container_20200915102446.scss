@@ -1,8 +1,4 @@
 .container {
-    @include mobile {
-        max-width: 100%;
-        align-self: flex-end;
-    }
     @include desktop {
         max-width: 1352px;
         min-width: 300px;

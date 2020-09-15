@@ -42,42 +42,6 @@
                     border-radius: 50%;
                     position: relative;
                 }
-                .stats__icon--person {
-                    background-color: var(--color3);
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        height: 60px;
-                        width: 65px;
-                        left: 30px;
-                        top: 2px;
-                        background: url(../assets/person.svg) no-repeat;
-                    }
-                }
-                .stats__icon--eye {
-                    background-color: var(--color1);
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        height: 60px;
-                        width: 65px;
-                        left: 30px;
-                        top: 15px;
-                        background: url(../assets/eye.svg) no-repeat;
-                    }
-                }
-                .stats__icon--catalog {
-                    background-color: var(--color4);
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        height: 60px;
-                        width: 65px;
-                        left: 30px;
-                        top: 5px;
-                        background: url(../assets/catalog.svg) no-repeat;
-                    }
-                }
                 .section-stats__box--value {
                     font-family: var(--font2);
                     color: #000;
@@ -96,5 +60,44 @@
                 }
             }
         }
+    }
+}
+
+.stats__icon--person {
+    background-color: var(--color3);
+    &::after {
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 65px;
+        left: 30px;
+        top: 2px;
+        background: url(../assets/person.svg) no-repeat;
+    }
+}
+
+.stats__icon--eye {
+    background-color: var(--color1);
+    &::after {
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 65px;
+        left: 30px;
+        top: 15px;
+        background: url(../assets/eye.svg) no-repeat;
+    }
+}
+
+.stats__icon--catalog {
+    background-color: var(--color4);
+    &::after {
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 65px;
+        left: 30px;
+        top: 5px;
+        background: url(../assets/catalog.svg) no-repeat;
     }
 }
