@@ -1333,31 +1333,40 @@ body {
   text-decoration: none;
 }
 
-.form {
-  width: 896px;
-  height: 376px;
-  margin: 0 auto;
-  padding-bottom: 39px;
+@media only screen and (min-width: 790px) {
+  .form {
+    width: 896px;
+    height: 376px;
+    margin: 0 auto;
+    padding-bottom: 39px;
+  }
 }
 .form .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-
-.form__contact-details {
-  width: 350px;
-  height: 376px;
+@media only screen and (min-width: 790px) {
+  .form .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-
-.form__contact-detail--title {
+@media only screen and (min-width: 790px) {
+  .form .container .form__contact-details {
+    width: 350px;
+    height: 376px;
+  }
+}
+.form .container .form__contact-details .form__contact-detail--title {
   font-family: var(--font2);
   color: #000;
   font-weight: 400;
   font-size: 49px;
   margin: 0;
 }
-
-.form__contact-detail--text {
+.form .container .form__contact-details .form__contact-detail--text {
   font-family: var(--font1);
   color: #000;
   font-weight: 400;
@@ -1365,14 +1374,13 @@ body {
   margin-top: 22px;
   margin-bottom: 42px;
 }
-
-.form__contact-detail--list {
+.form .container .form__contact-details .form__contact-detail--list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
 }
-.form__contact-detail--list li:first-child::before {
+.form .container .form__contact-details .form__contact-detail--list li:first-child::before {
   content: "";
   width: 27px;
   height: 27px;
@@ -1380,7 +1388,7 @@ body {
   left: -35px;
   background-image: url(../assets/mailicon.svg);
 }
-.form__contact-detail--list li:last-child::before {
+.form .container .form__contact-details .form__contact-detail--list li:last-child::before {
   content: "";
   width: 27px;
   height: 27px;
@@ -1388,8 +1396,7 @@ body {
   position: absolute;
   background-image: url(../assets/phoneicon.svg);
 }
-
-.form__contact-detail--item {
+.form .container .form__contact-details .form__contact-detail--list .form__contact-detail--item {
   position: relative;
   line-height: 22px;
   margin: 0;
@@ -1399,18 +1406,23 @@ body {
   font-weight: 700;
   font-size: 16px;
 }
-
-.form__user-details {
+.form .container .form__user-details {
+  margin-top: 40px;
+  margin-bottom: 40px;
   width: 440px;
   height: 376px;
 }
-
-.form__user-details--form {
+@media only screen and (min-width: 790px) {
+  .form .container .form__user-details {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.form .container .form__user-details .form__user-details--form {
   display: flex;
   flex-direction: column;
 }
-
-.form__user-details--form-inputs {
+.form .container .form__user-details .form__user-details--form .form__user-details--form-inputs {
   width: 440px;
   height: 157px;
   display: flex;
@@ -1420,18 +1432,11 @@ body {
   margin-top: 4px;
   margin-bottom: 30px;
 }
-
-.form__user-details--name {
+.form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--name {
   display: flex;
   flex-direction: column;
 }
-
-.form__user-details--email {
-  display: flex;
-  flex-direction: column;
-}
-
-.form__user-details--name-label {
+.form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--name .form__user-details--name-label {
   font-family: var(--font1);
   color: var(--color1);
   font-weight: 700;
@@ -1441,8 +1446,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 3.28px;
 }
-
-.form__user-details--email-label {
+.form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--name .form__user-details--name-input {
+  width: 440px;
+  height: 43px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--email {
+  display: flex;
+  flex-direction: column;
+}
+.form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--email .form__user-details--email-label {
   font-family: var(--font1);
   color: var(--color1);
   font-weight: 700;
@@ -1452,27 +1466,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 3.28px;
 }
-
-.form__user-details--name-input {
+.form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--email .form__user-details--email-input {
   width: 440px;
   height: 43px;
   border: none;
   border-bottom: 1px solid #000;
 }
-
-.form__user-details--email-input {
-  width: 440px;
-  height: 43px;
-  border: none;
-  border-bottom: 1px solid #000;
-}
-
-.form__user-details--checkbox {
+.form .container .form__user-details .form__user-details--form .form__user-details--checkbox {
   display: flex;
   margin-bottom: 20px;
 }
-
-.form__user-details--checkbox-input {
+.form .container .form__user-details .form__user-details--form .form__user-details--checkbox .form__user-details--checkbox-input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1488,11 +1492,10 @@ body {
   margin-right: 10px;
   cursor: pointer;
 }
-.form__user-details--checkbox-input:checked {
+.form .container .form__user-details .form__user-details--form .form__user-details--checkbox .form__user-details--checkbox-input:checked {
   background: url(../assets/checkmark.svg) no-repeat center;
 }
-
-.form__user-details--checkbox-label {
+.form .container .form__user-details .form__user-details--form .form__user-details--checkbox .form__user-details--checkbox-label {
   font-family: var(--font1);
   color: #707070;
   font-weight: 400;
@@ -1502,12 +1505,10 @@ body {
   line-height: 17px;
   cursor: pointer;
 }
-
-.form__user-details--btn {
+.form .container .form__user-details .form__user-details--form .form__user-details--btn {
   align-self: flex-end;
 }
-
-.form__user-details--btn-submit {
+.form .container .form__user-details .form__user-details--form .form__user-details--btn .form__user-details--btn-submit {
   width: 226px;
   height: 57px;
   border: none;

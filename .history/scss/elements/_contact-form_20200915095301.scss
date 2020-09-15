@@ -74,13 +74,9 @@
             }
         }
         .form__user-details {
-            margin-top: 40px;
-            margin-bottom: 40px;
-            width: 440px;
-            height: 376px;
             @include desktop {
-                margin-top: 0;
-                margin-bottom: 0;
+                width: 440px;
+                height: 376px;
             }
             .form__user-details--form {
                 display: flex;
