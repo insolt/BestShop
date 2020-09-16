@@ -1,0 +1,146 @@
+.page-header {
+    width: 100vw;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px var(--shadow1);
+    display: relative;
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .page-header__logo {
+            margin: 0;
+            color: var(--color1);
+            font-family: var(--font1);
+            font-size: 32px;
+            font-weight: 300;
+        }
+        .page-header__nav {
+            @include mobile {
+                .page-header__mobile-menu--hamburger-icon {
+                    .page-header__mobile-menu--hamburger-icon-link {
+                        text-align: right;
+                        color: var(--color1);
+                        font-size: 35px;
+                        margin: 0;
+                        transition: .3s all ease-in-out;
+                        &:hover {
+                            color: var(--color6);
+                        }
+                    }
+                }
+                .page-header__nav--list {
+                    display: none;
+                }
+            }
+            @include desktop {
+                width: auto;
+                height: 100%;
+                .page-header__mobile-menu--hamburger-icon {
+                    display: none;
+                }
+                .page-header__nav--list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    height: 100%;
+                    display: flex;
+                    .page-header__nav--el {
+                        height: 95%;
+                        margin: 0;
+                        &:last-child {
+                            a {
+                                margin-right: 0;
+                            }
+                        }
+                        &:hover {
+                            .page-header__nav--link {
+                                border-bottom: 4px solid var(--color1);
+                                font-weight: bold;
+                                color: #000;
+                            }
+                        }
+                        .page-header__nav--link {
+                            margin: 0;
+                            padding: 0 10px;
+                            height: 95%;
+                            font-family: var(--font2);
+                            font-size: 11px;
+                            color: var(--color2);
+                            text-decoration: none;
+                            margin: 4px 40px;
+                            text-transform: uppercase;
+                            letter-spacing: 3.28px;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .header__nav--active {
+                            border-bottom: 4px solid var(--color1);
+                            font-weight: bold;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*@include mobile {
+        .nav__mobile-nav {
+            display: relative;
+            .page-header__mobile-nav--list {
+                display: absolute;
+                width: 300px;
+                height: 200px;
+                border: 2px solid red;
+                top: 0;
+                left: 0;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                .page-header__mobile-nav--el {
+                    height: 95%;
+                    margin: 0;
+                    &:last-child {
+                        a {
+                            margin-right: 0;
+                        }
+                    }
+                    &:hover {
+                        .page-header__mobile-nav--link {
+                            border-bottom: 4px solid var(--color1);
+                            font-weight: bold;
+                            color: #000;
+                        }
+                    }
+                    .page-header__mobile-nav--link {
+                        margin: 0;
+                        padding: 0 10px;
+                        height: 95%;
+                        font-family: var(--font2);
+                        font-size: 11px;
+                        color: var(--color2);
+                        text-decoration: none;
+                        margin: 4px 40px;
+                        text-transform: uppercase;
+                        letter-spacing: 3.28px;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .header__mobile-nav--active {
+                        border-bottom: 4px solid var(--color1);
+                        font-weight: bold;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }*/
+}
