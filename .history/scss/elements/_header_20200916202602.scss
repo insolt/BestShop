@@ -30,8 +30,8 @@
             @include desktop {
                 display: none;
             }
-            &:hover+.page-header__nav--flex {
-                opacity: 1;
+            &:active+.page-header__nav--flex {
+                visibility: visible;
             }
         }
         .page-header__nav--flex {

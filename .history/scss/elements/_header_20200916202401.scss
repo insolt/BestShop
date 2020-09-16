@@ -30,13 +30,13 @@
             @include desktop {
                 display: none;
             }
-            &:hover+.page-header__nav--flex {
-                opacity: 1;
+            &:visited+.page-header__nav--flex {
+                visibility: visible;
             }
         }
         .page-header__nav--flex {
             @include mobile {
-                opacity: 0;
+                visibility: hidden;
                 position: absolute;
                 width: 100%;
                 height: 220px;

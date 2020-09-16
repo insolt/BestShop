@@ -1,0 +1,125 @@
+    .page-header {
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px var(--shadow1);
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .page-header__logo {
+            margin: 0;
+            color: var(--color1);
+            font-family: var(--font1);
+            font-size: 32px;
+            font-weight: 300;
+        }
+        .page-header__mobile-menu--hamburger-icon {
+            @include mobile {
+                text-align: right;
+            }
+            a {
+                text-align: right;
+                color: var(--color1);
+                font-size: 35px;
+                margin: 0;
+            }
+            @include desktop {
+                display: none;
+            }
+        }
+        .page-header__nav--flex {
+            @include mobile {
+                .page-header__mobile-menu--hamburger-icon {
+                    &:active+nav {
+                        position: absolute;
+                        width: 100%;
+                        height: 220px;
+                        top: 75px;
+                        left: 0;
+                        box-shadow: 0 3px 6px var(--shadow1);
+                        background-color: #fff;
+                    }
+                }
+                @include desktop {
+                    height: 70px;
+                    width: 550px;
+                }
+                .page-header__nav--list {
+                    @include mobile {}
+                    @include desktop {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        background-color: #fff;
+                        top: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 100%;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .page-header__nav--el {
+                        @include mobile {
+                            height: 45px;
+                            width: 80px;
+                            list-style-type: none;
+                            .page-header__nav--link {
+                                display: block;
+                                font-family: var(--font2);
+                                font-size: 11px;
+                                color: var(--color2);
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                letter-spacing: 3.28px;
+                                font-weight: bold;
+                            }
+                            .header__nav--active {
+                                border-bottom: 4px solid var(--color1);
+                                font-weight: bold;
+                                color: #000;
+                            }
+                            &:hover {
+                                .page-header__nav--link {
+                                    border-bottom: 4px solid var(--color1);
+                                    font-weight: bold;
+                                    color: #000;
+                                }
+                            }
+                        }
+                        @include desktop {
+                            height: 55%;
+                            list-style-type: none;
+                            .page-header__nav--link {
+                                padding: 0 10px;
+                                display: block;
+                                height: 100%;
+                                font-family: var(--font2);
+                                font-size: 11px;
+                                color: var(--color2);
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                letter-spacing: 3.28px;
+                                font-weight: bold;
+                            }
+                            .header__nav--active {
+                                border-bottom: 4px solid var(--color1);
+                                font-weight: bold;
+                                color: #000;
+                            }
+                            &:hover {
+                                .page-header__nav--link {
+                                    border-bottom: 4px solid var(--color1);
+                                    font-weight: bold;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

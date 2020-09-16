@@ -26,17 +26,17 @@
                 color: var(--color1);
                 font-size: 35px;
                 margin: 0;
+                &:visited+.page-header__nav--flex {
+                    visibility: visible;
+                }
             }
             @include desktop {
                 display: none;
             }
-            &:hover+.page-header__nav--flex {
-                opacity: 1;
-            }
         }
         .page-header__nav--flex {
             @include mobile {
-                opacity: 0;
+                visibility: hidden;
                 position: absolute;
                 width: 100%;
                 height: 220px;

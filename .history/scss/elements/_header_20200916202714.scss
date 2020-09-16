@@ -30,7 +30,7 @@
             @include desktop {
                 display: none;
             }
-            &:hover+.page-header__nav--flex {
+            &:active+.page-header__nav--flex {
                 opacity: 1;
             }
         }
@@ -44,6 +44,7 @@
                 left: 0;
                 box-shadow: 0 3px 6px var(--shadow1);
                 background-color: #fff;
+                transition: .2s all ease-in-out;
             }
             @include desktop {
                 height: 70px;

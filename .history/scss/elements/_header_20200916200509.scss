@@ -30,27 +30,25 @@
             @include desktop {
                 display: none;
             }
-            &:hover+.page-header__nav--flex {
-                opacity: 1;
-            }
         }
         .page-header__nav--flex {
-            @include mobile {
-                opacity: 0;
-                position: absolute;
-                width: 100%;
-                height: 220px;
-                top: 75px;
-                left: 0;
-                box-shadow: 0 3px 6px var(--shadow1);
-                background-color: #fff;
-            }
+            @include mobile {}
             @include desktop {
                 height: 70px;
                 width: 550px;
             }
             .page-header__nav--list {
-                @include mobile {}
+                @include mobile {
+                    .page-header__mobile-menu--hamburger-icon:hover {
+                        position: absolute;
+                        width: 100%;
+                        height: 220px;
+                        top: 75px;
+                        left: 0;
+                        box-shadow: 0 3px 6px var(--shadow1);
+                        background-color: #fff;
+                    }
+                }
                 @include desktop {
                     display: flex;
                     justify-content: space-between;

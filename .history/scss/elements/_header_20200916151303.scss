@@ -26,17 +26,21 @@
                 color: var(--color1);
                 font-size: 35px;
                 margin: 0;
+                &:hover {
+                    .page-header__nav--list {
+                        @include mobile {
+                            display: block;
+                        }
+                    }
+                }
             }
             @include desktop {
                 display: none;
             }
-            &:hover+.page-header__nav--flex {
-                opacity: 1;
-            }
         }
         .page-header__nav--flex {
             @include mobile {
-                opacity: 0;
+                display: none;
                 position: absolute;
                 width: 100%;
                 height: 220px;
@@ -65,7 +69,7 @@
                 }
                 .page-header__nav--el {
                     @include mobile {
-                        height: 55px;
+                        height: 45px;
                         width: 80px;
                         list-style-type: none;
                         .page-header__nav--link {
@@ -124,3 +128,15 @@
         }
     }
 }
+
+
+/*
+               
+                
+                    .page-header__nav--el {
+                        height: 55%;
+                        
+                        
+                       
+                    }
+                }*/

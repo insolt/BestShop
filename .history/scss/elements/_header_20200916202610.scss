@@ -30,7 +30,7 @@
             @include desktop {
                 display: none;
             }
-            &:hover+.page-header__nav--flex {
+            &:active+.page-header__nav--flex {
                 opacity: 1;
             }
         }

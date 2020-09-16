@@ -31,12 +31,7 @@
                 display: none;
             }
             &:hover+.page-header__nav--flex {
-                opacity: 1;
-            }
-        }
-        .page-header__nav--flex {
-            @include mobile {
-                opacity: 0;
+                visibility: visible;
                 position: absolute;
                 width: 100%;
                 height: 220px;
@@ -44,6 +39,11 @@
                 left: 0;
                 box-shadow: 0 3px 6px var(--shadow1);
                 background-color: #fff;
+            }
+        }
+        .page-header__nav--flex {
+            @include mobile {
+                visibility: hidden;
             }
             @include desktop {
                 height: 70px;

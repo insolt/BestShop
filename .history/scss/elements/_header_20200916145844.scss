@@ -26,17 +26,20 @@
                 color: var(--color1);
                 font-size: 35px;
                 margin: 0;
+                &:hover {
+                    .page-header__nav--list {
+                        @include mobile {
+                            display: block;
+                        }
+                    }
+                }
             }
             @include desktop {
                 display: none;
             }
-            &:hover+.page-header__nav--flex {
-                opacity: 1;
-            }
         }
         .page-header__nav--flex {
             @include mobile {
-                opacity: 0;
                 position: absolute;
                 width: 100%;
                 height: 220px;
@@ -50,7 +53,9 @@
                 width: 550px;
             }
             .page-header__nav--list {
-                @include mobile {}
+                @include mobile {
+                    display: none;
+                }
                 @include desktop {
                     display: flex;
                     justify-content: space-between;
@@ -64,12 +69,11 @@
                     margin: 0;
                 }
                 .page-header__nav--el {
-                    @include mobile {
-                        height: 55px;
-                        width: 80px;
+                    @include mobile {}
+                    @include desktop {
                         list-style-type: none;
                         .page-header__nav--link {
-                            display: block;
+                            height: 95%;
                             font-family: var(--font2);
                             font-size: 11px;
                             color: var(--color2);
@@ -77,45 +81,17 @@
                             text-transform: uppercase;
                             letter-spacing: 3.28px;
                             font-weight: bold;
-                        }
-                        .header__nav--active {
-                            border-bottom: 4px solid var(--color1);
-                            font-weight: bold;
-                            color: #000;
-                        }
-                        &:hover {
-                            .page-header__nav--link {
+                            .header__nav--active {
                                 border-bottom: 4px solid var(--color1);
                                 font-weight: bold;
                                 color: #000;
                             }
-                        }
-                    }
-                    @include desktop {
-                        height: 55%;
-                        list-style-type: none;
-                        .page-header__nav--link {
-                            padding: 0 10px;
-                            display: block;
-                            height: 100%;
-                            font-family: var(--font2);
-                            font-size: 11px;
-                            color: var(--color2);
-                            text-decoration: none;
-                            text-transform: uppercase;
-                            letter-spacing: 3.28px;
-                            font-weight: bold;
-                        }
-                        .header__nav--active {
-                            border-bottom: 4px solid var(--color1);
-                            font-weight: bold;
-                            color: #000;
-                        }
-                        &:hover {
-                            .page-header__nav--link {
-                                border-bottom: 4px solid var(--color1);
-                                font-weight: bold;
-                                color: #000;
+                            &:hover {
+                                .page-header__nav--link {
+                                    border-bottom: 4px solid var(--color1);
+                                    font-weight: bold;
+                                    color: #000;
+                                }
                             }
                         }
                     }
@@ -124,3 +100,15 @@
         }
     }
 }
+
+
+/*
+               
+                
+                    .page-header__nav--el {
+                        height: 55%;
+                        
+                        
+                       
+                    }
+                }*/

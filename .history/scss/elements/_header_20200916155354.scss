@@ -26,24 +26,23 @@
                 color: var(--color1);
                 font-size: 35px;
                 margin: 0;
+                &:hover+nav {
+                    position: absolute;
+                    width: 100%;
+                    height: 220px;
+                    top: 75px;
+                    left: 0;
+                    box-shadow: 0 3px 6px var(--shadow1);
+                    background-color: #fff;
+                }
             }
             @include desktop {
                 display: none;
             }
-            &:hover+.page-header__nav--flex {
-                opacity: 1;
-            }
         }
         .page-header__nav--flex {
             @include mobile {
-                opacity: 0;
-                position: absolute;
-                width: 100%;
-                height: 220px;
-                top: 75px;
-                left: 0;
-                box-shadow: 0 3px 6px var(--shadow1);
-                background-color: #fff;
+                display: none;
             }
             @include desktop {
                 height: 70px;
@@ -65,7 +64,7 @@
                 }
                 .page-header__nav--el {
                     @include mobile {
-                        height: 55px;
+                        height: 45px;
                         width: 80px;
                         list-style-type: none;
                         .page-header__nav--link {

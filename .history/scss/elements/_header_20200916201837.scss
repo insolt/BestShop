@@ -30,13 +30,12 @@
             @include desktop {
                 display: none;
             }
-            &:hover+.page-header__nav--flex {
-                opacity: 1;
+             :hover .page-header__nav--list {
+                background: red !important;
             }
         }
         .page-header__nav--flex {
             @include mobile {
-                opacity: 0;
                 position: absolute;
                 width: 100%;
                 height: 220px;

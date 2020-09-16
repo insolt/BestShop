@@ -26,17 +26,20 @@
                 color: var(--color1);
                 font-size: 35px;
                 margin: 0;
+                &:hover {
+                    .page-header__nav--list {
+                        @include mobile {
+                            display: block;
+                        }
+                    }
+                }
             }
             @include desktop {
                 display: none;
             }
-            &:hover+.page-header__nav--flex {
-                opacity: 1;
-            }
         }
         .page-header__nav--flex {
             @include mobile {
-                opacity: 0;
                 position: absolute;
                 width: 100%;
                 height: 220px;
@@ -64,9 +67,8 @@
                     margin: 0;
                 }
                 .page-header__nav--el {
+                    height: 24%;
                     @include mobile {
-                        height: 55px;
-                        width: 80px;
                         list-style-type: none;
                         .page-header__nav--link {
                             display: block;
@@ -95,7 +97,6 @@
                         height: 55%;
                         list-style-type: none;
                         .page-header__nav--link {
-                            padding: 0 10px;
                             display: block;
                             height: 100%;
                             font-family: var(--font2);
@@ -124,3 +125,15 @@
         }
     }
 }
+
+
+/*
+               
+                
+                    .page-header__nav--el {
+                        height: 55%;
+                        
+                        
+                       
+                    }
+                }*/
