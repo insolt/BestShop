@@ -206,13 +206,13 @@
             }
             .form__user-details--btn {
                 @include mobile {
-                    align-self: flex-end;
+                    margin-left: 30%;
                 }
                 @include desktop {
                     align-self: flex-end;
                 }
                 .form__user-details--btn-submit {
-                    width: 30vw;
+                    width: 226px;
                     height: 57px;
                     border: none;
                     border-radius: 35px;
@@ -224,9 +224,6 @@
                     font-weight: 700;
                     cursor: pointer;
                     outline: none;
-                    @include desktop {
-                        width: 226px;
-                    }
                 }
             }
         }
