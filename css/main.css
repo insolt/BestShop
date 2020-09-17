@@ -373,7 +373,7 @@ body {
 
 .page-header {
   height: 70px;
-  width: 100vw;
+  width: 100%;
   background-color: #fff;
   box-shadow: 0 3px 6px var(--shadow1);
 }
@@ -502,6 +502,7 @@ body {
 
 .section-opening {
   height: 550px;
+  width: 100%;
   background: url(../assets/background.png) no-repeat center bottom;
   background-size: contain;
 }
@@ -666,6 +667,7 @@ body {
 
 .articles {
   height: auto;
+  width: 100%;
   background: #f7f7f7;
   padding-top: 105px;
   margin: 0;
@@ -1594,6 +1596,7 @@ body {
 
 .page-footer {
   background: #f7f7f7;
+  width: 100%;
   box-shadow: 0px -5px 40px var(--shadow1);
 }
 .page-footer .container {
