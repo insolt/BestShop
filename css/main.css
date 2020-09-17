@@ -358,7 +358,7 @@ body {
 
 @media only screen and (max-width: 790px) {
   .container {
-    max-width: 100%;
+    width: 100%;
     align-self: flex-end;
   }
 }
@@ -560,12 +560,16 @@ body {
 
 .section-stats {
   height: auto;
+  width: 100%;
   box-shadow: 0 -5px 80px var(--shadow1);
 }
 @media only screen and (min-width: 790px) {
   .section-stats {
     height: 531px;
   }
+}
+.section-stats .container {
+  width: 100%;
 }
 .section-stats .container .section-stats__title {
   font-family: var(--font2);
@@ -1389,6 +1393,7 @@ body {
   }
 }
 .form .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1508,11 +1513,21 @@ body {
   text-transform: uppercase;
   letter-spacing: 3.28px;
 }
-.form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--name .form__user-details--name-input {
-  width: 440px;
-  height: 43px;
-  border: none;
-  border-bottom: 1px solid #000;
+@media only screen and (max-width: 790px) {
+  .form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--name .form__user-details--name-input {
+    width: 100%;
+    height: 43px;
+    border: none;
+    border-bottom: 1px solid #000;
+  }
+}
+@media only screen and (min-width: 790px) {
+  .form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--name .form__user-details--name-input {
+    width: 440px;
+    height: 43px;
+    border: none;
+    border-bottom: 1px solid #000;
+  }
 }
 .form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--email {
   display: flex;
@@ -1528,24 +1543,34 @@ body {
   text-transform: uppercase;
   letter-spacing: 3.28px;
 }
-.form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--email .form__user-details--email-input {
-  width: 440px;
-  height: 43px;
-  border: none;
-  border-bottom: 1px solid #000;
+@media only screen and (max-width: 790px) {
+  .form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--email .form__user-details--email-input {
+    width: 100%;
+    height: 43px;
+    border: none;
+    border-bottom: 1px solid #000;
+  }
 }
-.form .container .form__user-details .form__user-details--form .form__user-details--checkbox {
+@media only screen and (min-width: 790px) {
+  .form .container .form__user-details .form__user-details--form .form__user-details--form-inputs .form__user-details--email .form__user-details--email-input {
+    width: 440px;
+    height: 43px;
+    border: none;
+    border-bottom: 1px solid #000;
+  }
+}
+.form .container .form__user-details .form__user-details--checkbox {
   margin: 0 auto;
   width: 80%;
   display: flex;
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 790px) {
-  .form .container .form__user-details .form__user-details--form .form__user-details--checkbox {
+  .form .container .form__user-details .form__user-details--checkbox {
     width: 100%;
   }
 }
-.form .container .form__user-details .form__user-details--form .form__user-details--checkbox .form__user-details--checkbox-input {
+.form .container .form__user-details .form__user-details--checkbox .form__user-details--checkbox-input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1561,10 +1586,10 @@ body {
   margin-right: 10px;
   cursor: pointer;
 }
-.form .container .form__user-details .form__user-details--form .form__user-details--checkbox .form__user-details--checkbox-input:checked {
+.form .container .form__user-details .form__user-details--checkbox .form__user-details--checkbox-input:checked {
   background: url(../assets/checkmark.svg) no-repeat center;
 }
-.form .container .form__user-details .form__user-details--form .form__user-details--checkbox .form__user-details--checkbox-label {
+.form .container .form__user-details .form__user-details--checkbox .form__user-details--checkbox-label {
   font-family: var(--font1);
   color: #707070;
   font-weight: 400;
@@ -1575,11 +1600,11 @@ body {
   cursor: pointer;
 }
 @media only screen and (min-width: 790px) {
-  .form .container .form__user-details .form__user-details--form .form__user-details--btn {
+  .form .container .form__user-details .form__user-details--btn {
     align-self: flex-end;
   }
 }
-.form .container .form__user-details .form__user-details--form .form__user-details--btn .form__user-details--btn-submit {
+.form .container .form__user-details .form__user-details--btn .form__user-details--btn-submit {
   width: 226px;
   height: 57px;
   border: none;
