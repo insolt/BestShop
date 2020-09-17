@@ -373,6 +373,7 @@ body {
 
 .page-header {
   height: 70px;
+  width: 100vw;
   background-color: #fff;
   box-shadow: 0 3px 6px var(--shadow1);
 }
