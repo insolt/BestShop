@@ -1,8 +1,9 @@
 .calc {
+    font-family: var(--font1);
     margin-bottom: 150px;
     padding: 80px 0;
     background-color: var(--color-light-grey);
-    @include desktop {
+    @include mobile {
         padding: 30px 15px;
     }
     h2 {
@@ -12,14 +13,14 @@
         max-width: 865px;
         margin: 50px auto 0;
         display: flex;
-        @include desktop {
+        @include mobile {
             display: block;
         }
     }
     &__form {
         width: 50%;
         margin-right: 20px;
-        @include desktop {
+        @include mobile {
             width: 100%;
             margin-right: 0;
         }
@@ -27,7 +28,7 @@
     &__input input,
     &__select .select__input {
         color: var(--color-grey);
-        width: 100%;
+        width: 90%;
         border-radius: 6px;
         border: 1px solid var(--color1);
         padding: 11px 20px;
@@ -100,7 +101,7 @@
         margin-left: 20px;
         display: flex;
         flex-direction: column;
-        @include desktop {
+        @include mobile {
             width: 100%;
             margin-left: 0;
             margin-top: 30px;
