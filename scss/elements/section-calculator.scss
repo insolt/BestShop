@@ -1,5 +1,5 @@
 .calc {
-    font-family: var(--font1);
+    font-family: var(--font2);
     margin-bottom: 150px;
     padding: 80px 0;
     background-color: var(--color-light-grey);
@@ -49,19 +49,21 @@
         position: relative;
         .select__input {
             position: relative;
-            height: 40px;
+            height: 15px;
             vertical-align: middle;
-            padding: 13px 20px;
+            padding: 11px 20px;
             cursor: pointer;
             &::after {
-                content: "";
-                background-image: url("../assets/Arrow.svg");
+                content: "\f358";
+                font-family: "Font Awesome 5 Free";
+                color: var(--color1);
+                font-size: 2em;
                 width: 22px;
                 height: 22px;
                 display: block;
                 position: absolute;
-                right: 14px;
-                top: 9px;
+                right: 12px;
+                top: 12px;
             }
         }
         .select__dropdown {
@@ -94,6 +96,7 @@
     .form__checkbox {
         .consent__text {
             padding-top: 4px;
+            margin-top: 0;
         }
     }
     &__summary {
@@ -104,7 +107,10 @@
         @include mobile {
             width: 100%;
             margin-left: 0;
-            margin-top: 30px;
+        }
+        ul {
+            margin-top: 0;
+            margin-bottom: 0;
         }
         .summary__total,
         .list__item {
@@ -118,6 +124,10 @@
             &.open {
                 display: flex;
             }
+        }
+        .list__item {
+            margin-bottom: 20px;
+            height: 27px;
         }
         .summary__total {
             width: 50%;
@@ -133,7 +143,7 @@
         .list__item {
             padding: 6px 20px;
             background-color: var(--color1);
-            margin-bottom: 8px;
+            margin-bottom: 20px;
             .item {
                 &__price {
                     font-weight: 700;

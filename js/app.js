@@ -3,7 +3,7 @@ const selectDropdown = document.querySelector('.select__dropdown');
 const summaryTotal = document.querySelector('.summary__total');
 const listItem = document.querySelector('.list__item');
 
-// selectDropdown.classList.add('open');
+selectDropdown.classList.add('open');
 summaryTotal.classList.add('open');
 listItem.classList.add('open');
 
