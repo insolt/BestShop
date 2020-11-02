@@ -19,11 +19,10 @@ let actualOrdersPrice = 0;
 let diffProductsPrice;
 let diffOrdersPrice;
 let elPrice;
-for (item of numberOfInputs) {
+for (let item of numberOfInputs) {
     item.addEventListener('input', (e) => {
         prevProductsPrice = actualProductsPrice;
         prevOrdersPrice = actualOrdersPrice;
-        console.log(e.target.value);
         (e.target.id === 'products') ? (elPrice = productsPrice) : (elPrice = ordersPrice);
         if (e.target.value !== null || e.target.value >= 1 || e.target.value !== '') {
             actualPrice = e.target.value * elPrice;
@@ -43,8 +42,8 @@ for (item of numberOfInputs) {
 selectPackage.addEventListener('click', (e) => {
     displayPackage.classList.add('open');
 })
-for (item1 of package) {
-    item1.addEventListener('click', (e) => {
+for (let item of package) {
+    item.addEventListener('click', (e) => {
         console.log(e.target.innerText);
         displayPackage.classList.remove('open');
         selectPackage.innerText = e.target.innerText;
@@ -66,9 +65,9 @@ for (item1 of package) {
         document.querySelector('[data-id="package"]').classList.add('open');
     })
 }
-for (let item2 of checkInputs) {
-    item2.addEventListener('change', (e) => {
-        document.querySelector(`[data-id="${item2.id}"]`).classList.toggle('open');
+for (let item of checkInputs) {
+    item.addEventListener('change', (e) => {
+        document.querySelector(`[data-id="${e.target.id}"]`).classList.toggle('open');
         let price;
         (e.target.id === 'accounting') ? (price = accountingPrice) : (price = terminalPrice);
         document.querySelector(`[data-id="${e.target.id}"] .item__price`).innerText = `$${price.toFixed(2)}`;
